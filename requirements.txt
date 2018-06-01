@@ -1,0 +1,35 @@
+#Postgres connection
+psycopg2==2.7.4
+
+#Handle database credentials like a pro
+dj-database-url==0.5.0
+
+#idiomatic command line interface lib
+click==6.7
+
+#datetime for humans
+python-dateutil==2.7.3
+
+#WSGI Server
+gunicorn==19.8.1
+
+#Django REST API
+django==2.0.5
+djangorestframework==3.8.2
+django-filter==1.1.0
+
+#Extensions to make your Django life easier =)
+django-extensions==2.0.7
+
+#Please, just code DRY Forms
+django-crispy-forms==1.7.2
+
+#Per object permissions - I know you don't need it yet. Just wait for it =)
+django-guardian==1.4.9
+
+#Easy REST API Authentication using JWT
+django-rest-auth==0.9.3
+djangorestframework-jwt==1.11.0
+
+#Enable JWT tokens using digital signature algorithms (like RSA or ECDSA)
+cryptography==2.2.2
