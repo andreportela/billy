@@ -33,3 +33,6 @@ djangorestframework-jwt==1.11.0
 
 #Enable JWT tokens using digital signature algorithms (like RSA or ECDSA)
 cryptography==2.2.2
+
+#enable exchange authentication
+exchangelib==1.11.4
