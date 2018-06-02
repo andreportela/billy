@@ -24,6 +24,11 @@ django-extensions==2.0.7
 #Please, just code DRY Forms
 django-crispy-forms==1.7.2
 
+#serve static files from gunicorn - do yourself a favor and use a cdn with this
+whitenoise==3.3.1
+#beats gzip compression - whitenoise will only use it when a client asks for it
+brotlipy==0.7.0
+
 #Per object permissions - I know you don't need it yet. Just wait for it =)
 django-guardian==1.4.9
 
