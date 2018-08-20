@@ -15,8 +15,15 @@ gunicorn==19.8.1
 
 #Django REST API
 django==2.0.5
+pytz==2018.5
+six==1.11.0
 djangorestframework==3.8.2
 django-filter==1.1.0
+djangorestframework-jwt==1.11.0
+PyJWT==1.6.4
+
+#Just for local dev, it will be removed soon
+django-cors-headers==2.1.0
 
 #Extensions to make your Django life easier =)
 django-extensions==2.0.7
@@ -32,3 +39,5 @@ django-rest-auth==0.9.3
 
 #Excel file processing
 openpyxl==2.5.5
+et-xmlfile==1.0.1
+jdcal==1.4
