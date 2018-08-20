@@ -29,3 +29,6 @@ django-guardian==1.4.9
 
 #Easy REST API Authentication using Django defaults
 django-rest-auth==0.9.3
+
+#Excel file processing
+openpyxl==2.5.5
