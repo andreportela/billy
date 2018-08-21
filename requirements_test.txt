@@ -1,0 +1,2 @@
+#Lib to help on test data preparation for Django
+model-mommy==1.6.0
