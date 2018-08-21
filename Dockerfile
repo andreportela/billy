@@ -7,17 +7,19 @@ ENV DJANGO_PROJECT_NAME project
 
 RUN mkdir ${BASE_FOLDER}
 
-COPY requirements.txt postgres_ready.py ${BASE_FOLDER}/
+COPY requirements.txt requirements_test.txt postgres_ready.py ${BASE_FOLDER}/
 
 RUN apk update && \
     apk upgrade && \
-    apk add --no-cache --virtual postgres-build-deps \ 
-        gcc=6.4.0-r5 \ 
-        musl-dev=1.1.18-r3 \ 
-        libffi-dev=3.2.1-r4 \ 
-        python3-dev=3.6.3-r9 && \ 
+    apk add --no-cache --virtual postgres-build-deps \
+        gcc=6.4.0-r5 \
+        musl-dev=1.1.18-r3 \
+        libffi-dev=3.2.1-r4 \
+        python3-dev=3.6.3-r9 && \
     apk add --no-cache postgresql-dev=10.5-r0 && \
+    pip3 install --upgrade pip && \
     pip3 install --no-cache-dir -r ${BASE_FOLDER}/requirements.txt && \
+    pip3 install --no-cache-dir -r ${BASE_FOLDER}/requirements_test.txt && \
     apk del postgres-build-deps && \
     rm -rf /var/cache/apk/* && \
     addgroup -S django && \
