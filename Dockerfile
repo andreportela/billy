@@ -16,7 +16,7 @@ RUN apk update && \
         musl-dev=1.1.18-r3 \ 
         libffi-dev=3.2.1-r4 \ 
         python3-dev=3.6.3-r9 && \ 
-    apk add --no-cache postgresql-dev=10.4-r0 && \ 
+    apk add --no-cache postgresql-dev=10.5-r0 && \
     pip3 install --no-cache-dir -r ${BASE_FOLDER}/requirements.txt && \
     apk del postgres-build-deps && \
     rm -rf /var/cache/apk/* && \
