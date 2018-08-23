@@ -27,6 +27,7 @@ django-cors-headers==2.1.0
 
 #Extensions to make your Django life easier =)
 django-extensions==2.0.7
+Pygments==2.2.0
 
 #Please, just code DRY Forms
 django-crispy-forms==1.7.2
