@@ -15,7 +15,7 @@ RUN apk update && \
         gcc=6.4.0-r5 \
         musl-dev=1.1.18-r3 \
         libffi-dev=3.2.1-r4 \
-        python3-dev=3.6.3-r9 && \
+        python3-dev=3.6.5-r0 && \
     apk add --no-cache postgresql-dev=10.5-r0 && \
     pip3 install --upgrade pip && \
     pip3 install --no-cache-dir -r ${BASE_FOLDER}/requirements.txt && \
