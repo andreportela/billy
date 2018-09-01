@@ -21,6 +21,8 @@ djangorestframework==3.8.2
 django-filter==1.1.0
 djangorestframework-jwt==1.11.0
 PyJWT==1.6.4
+# for serving media files in production
+dj-static==0.0.6
 
 #Just for local dev, it will be removed soon
 django-cors-headers==2.1.0
