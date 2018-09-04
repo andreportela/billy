@@ -41,7 +41,7 @@ services:
 
   quickdrawproject:
     build: .
-    command: ["sh", "-c", "/app/postgres_ready.py --prevent_ssl --host=db && python manage.py migrate && exec gunicorn --access-logfile - -w 4 project.wsgi:application -b 0.0.0.0:80"]
+    command: ["sh", "-c", "/postgres_ready.py --prevent_ssl --host=db && python manage.py migrate && exec gunicorn --access-logfile - -w 4 project.wsgi:application -b 0.0.0.0:80"]
     depends_on:
       - db
     environment:
