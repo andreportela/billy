@@ -7,7 +7,9 @@ ENV DJANGO_PROJECT_NAME project
 
 RUN mkdir ${BASE_FOLDER}
 
-COPY requirements.txt requirements_test.txt postgres_ready.py ${BASE_FOLDER}/
+COPY postgres_ready.py /
+
+COPY requirements.txt requirements_test.txt ${BASE_FOLDER}/
 
 RUN apk update && \
     apk upgrade && \
@@ -25,6 +27,6 @@ RUN apk update && \
     addgroup -S django && \
     adduser -D -H -S django django && \
     chown -R django:django ${BASE_FOLDER} && \
-    chmod +x ${BASE_FOLDER}/postgres_ready.py
+    chmod +x /postgres_ready.py
 
 WORKDIR ${BASE_FOLDER}
