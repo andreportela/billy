@@ -41,6 +41,6 @@ django-guardian==1.4.9
 django-rest-auth==0.9.3
 
 #Excel file processing
-openpyxl==2.5.5
+openpyxl==2.5.8
 et-xmlfile==1.0.1
 jdcal==1.4
